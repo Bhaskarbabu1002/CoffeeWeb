@@ -1,0 +1,31 @@
+.pre_header {
+    height: 74px;
+}
+.pre_header-bg {
+    background: #2163f3 !important;
+}
+.navbar-brand {
+    font-size: 40px !important;
+    padding-bottom: unset !important;
+}
+.navbar-brand img {
+    max-height: 70px;
+    object-fit: cover;
+}
+.pre_header .navbar {
+    padding: 1px 100px !important;
+    height: 74px;
+
+}
+
+@media (max-width: 767.98px) { 
+    .container-fluid {
+        display: flex;
+        justify-content: center !important;
+    }
+    .pre_header .navbar {
+        padding: 1px 0px !important;
+        height: 74px;
+        z-index: 9;
+    }
+}

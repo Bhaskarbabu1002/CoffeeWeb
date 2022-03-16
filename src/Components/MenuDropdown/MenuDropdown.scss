@@ -1,0 +1,92 @@
+.dd_container {
+  width: fit-content;
+  height: auto;
+  position: relative;
+  // .arrow_svg  path {
+  //     fill: rgb(216, 11, 11);
+  //   }
+  .sub_nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_nav-link {
+    color: #545454 !important;
+    padding: 0.5rem 0.5rem !important;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .main_nav-link:hover {
+    color: #2163f3 !important;
+    padding: 0.5rem 0.5rem !important;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .nav-link {
+    padding: 0.5rem 0.5rem !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #21262a;
+  }
+  .nav-link:hover {
+    padding: 0.5rem 0.5rem !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2163f3 !important;
+  }
+
+  &_menu {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    top: 2.4rem;
+    z-index: 100;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+  }
+  &_menu_hide {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    visibility: collapse;
+    background-color: #fff;
+    top: 1.4rem;
+    opacity: 0;
+    z-index: 100;
+    transition: all 0.5s ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .sub_menu {
+    width: -webkit-fill-available;
+    position: absolute;
+    left: 12rem;
+    top: 1rem;
+    background-color: #fff;
+    opacity: 1;
+    transition: all 1s ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+  }
+  .sub_menu_hide {
+    width: -webkit-fill-available;
+    position: absolute;
+    left: 10rem;
+    top: 1rem;
+    opacity: 0;
+    background-color: #fff;
+    transition: all 1s ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    visibility: collapse;
+  }
+  .trade_sub_menu {
+    top: 2.5rem;
+  }
+  .news_sub_menu {
+    top: 5rem;
+  }
+  .user_sub_menu {
+    top: 7.5rem;
+  }
+}

@@ -1,0 +1,70 @@
+.upload_video_section {
+  max-width: 100% !important;
+  // .upload_heading {
+  //     display: flex;
+  //     justify-content: space-between;
+  // }
+  .addnew_btn {
+    background-color: #2163f3 !important;
+    color: white !important;
+    outline: none !important;
+    border-color: #2163f3 !important;
+  }
+  .upload_video_card {
+    .upload_video_card-body {
+      .indvideobox {
+        border: 1px solid #f2f1f1;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        .title {
+          font-weight: 500;
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          background-color: #2163f3;
+          color: white;
+          box-shadow: 1px 2px 4px #2163f3;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          padding: 5px;
+        }
+      }
+      .desc {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        background-color: #f2f1f1;
+        color: black;
+        box-shadow: 1px 2px 4px #f2f1f1;
+        /* padding: 5px; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+    .descicons {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        background-color: #f2f1f1;
+        color: black;
+        box-shadow: 1px 2px 4px #f2f1f1;
+        padding: 5px;
+        img {
+            width: 10px;
+        }
+        .upload_card_icons {
+            padding: 0px 10px;
+        }
+    }
+    }
+  }
+}

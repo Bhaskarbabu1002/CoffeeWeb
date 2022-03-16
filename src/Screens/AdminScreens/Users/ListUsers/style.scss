@@ -1,0 +1,118 @@
+.list_newsfeed {
+    max-width: 100% !important;
+    .main-head {
+        font-weight: bold;
+    }
+}
+.react-bootstrap-table {
+    min-height: 400px;
+  }
+  .react-bootstrap-table table {
+    table-layout: auto !important;
+  }
+  thead {
+    background-color: #2163f3 !important;
+      color: white;
+      font-size: 14px !important;
+      vertical-align: middle !important;
+      text-align: left;
+      background: white;
+      position: sticky;
+      top: 0;
+  }
+  .table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+    border-color: #fff !important;
+    // font-size: 14px !important;
+  }
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  .page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: unset !important;
+  }
+  .react-bootstrap-table-pagination {
+    text-align: left !important;
+    margin-top: 3rem;
+  }
+  .pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    justify-content: end;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 0rem !important;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    width: -webkit-fill-available;
+  }
+  .btn-secondary {
+    color: #fff;
+    background-color: #2163f3 !important;
+    border-color: #2163f3 !important;
+  }
+  .serch_form {
+    border-color: #2163f3 !important;
+    border: 2px solid #2163f3 !important;
+    border-radius: 5px;
+    background-color: #f2f1f1;
+    padding: 3px 10px;
+    width: auto !important;
+  }
+  // input {
+  //   width: auto !important;
+  // }
+  input:focus {
+    border-color: #2163f3 !important;
+    border: 2px solid #2163f3 !important;
+    outline: unset;
+  }
+  .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 8px dashed;
+    border-top: 8px solid \9;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+  }
+  
+  .dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+    border-top: 0;
+    border-bottom: 8px dashed;
+    border-bottom: 8px solid \9;
+    content: "";
+  }
+  .dropdown-toggle::after {
+    display: none !important;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }

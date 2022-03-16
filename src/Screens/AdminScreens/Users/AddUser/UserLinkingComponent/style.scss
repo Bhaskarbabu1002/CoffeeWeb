@@ -1,0 +1,30 @@
+.user_linking_card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #f2f1f1;
+    background-clip: border-box;
+    border: 1px solid #f2f1f1;
+    /* border-radius: 2.25rem; */
+    BORDER-RADIUS: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0,0,0.2);
+    .user_nav-link {
+        font-size: 16px;
+        font-weight: 400;
+        color: #21262a;
+    }
+    .user_nav-link:hover {
+        font-size: 16px;
+        font-weight: 400;
+        color: #2163f3;
+    }
+    .active_nav-link{
+        color: #2163f3 !important;
+    }
+    .user_Icons {
+        width: 20px;
+        margin-right: 10px;
+    }
+}

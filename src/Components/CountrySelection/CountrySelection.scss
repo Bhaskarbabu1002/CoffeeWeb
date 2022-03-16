@@ -1,0 +1,31 @@
+.YOUR_CSS_CLASS {
+    background: transparent;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    width: 200px;
+    padding: 5px;
+}
+.country {
+    color: #000 !important;
+}
+input {
+    outline: none;
+}
+.country-select .selected-flag .arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 6px;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid #fff !important;
+}
+// .country-select .selected-flag .arrow.up {
+//     border-top: none;
+//     border-bottom: 4px solid #fff !;
+// }
