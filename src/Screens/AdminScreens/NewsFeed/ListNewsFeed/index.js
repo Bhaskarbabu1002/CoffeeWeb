@@ -46,7 +46,6 @@ const ListNewsFeed = () => {
         {
           dataField: "Preview",
           text: "Preview",
-          sort: true,
           formatter: eye,
           // filter: textFilter()
         },
