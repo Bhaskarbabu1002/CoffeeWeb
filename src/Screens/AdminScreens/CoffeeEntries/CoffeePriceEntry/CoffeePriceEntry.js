@@ -230,9 +230,9 @@ const CoffeePriceEntry = () => {
     <div className='row'>
         <div className='col-md-3'></div>
         <div className='col-md-4 coffee_price_btns'>
-  <button type="button" className="btn btn-primary">Save</button>
-  <button type="button" className="btn btn-outline-primary">Reset</button>
-  <button type="button" className="btn btn-primary">New Entry</button>
+  <button type="button" className="btn save_btn">Save</button>
+  <button type="button" className="btn reset_btn">Reset</button>
+  <button type="button" className="btn save_btn">New Entry</button>
         </div>
         <div className='col-md-5 text-right price_info'>
             <div className='d-flex justify-content-end'>

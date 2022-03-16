@@ -3,7 +3,7 @@ import './style.scss';
 import { useHistory } from 'react-router-dom';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import BootstrapTable from 'react-bootstrap-table-next';
-import checkcircle from "../../../../Assets/Icons/check-circle.svg";
+import {ReactComponent as Checkcircle} from "../../../../Assets/Icons/check-circle.svg";
 import editIcon from "../../../../Assets/Icons/edit.svg";
 import trash from "../../../../Assets/Icons/trash.svg";
 
@@ -213,13 +213,13 @@ const product = [
  
 ];
   function imageFormatter(cell, row){
-    return <div onClick={redirect}><img src= {editIcon} /></div>;
+    return <div onClick={redirect} style={{cursor:'pointer'}}><img src= {editIcon} /></div>;
     }
     function checkCircle(cell, row){
-      return <img src= {checkcircle} />;
+      return <Checkcircle stroke={"green"}/>;
       }
       function trashBin(cell, row){
-        return <img src= {trash} />;
+        return <img src= {trash}  style={{cursor:'pointer'}}/>;
         }
   let history = useHistory();
   const redirect = () => {

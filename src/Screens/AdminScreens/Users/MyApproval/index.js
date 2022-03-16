@@ -22,26 +22,39 @@ const options = {
 const MyApproval = () => {
   const columns = [
     {
-      dataField: "NewsDate",
-      text: "News Date",
+      dataField: "ApprovalType",
+      text: "Approval Type",
       sort: true,
     },
     {
-      dataField: "NewsAuthor",
-      text: "News Author",
+      dataField: "Status",
+      text: "Status",
       sort: true,
       // filter: textFilter()
     },
     {
-      dataField: "NewsSubject",
-      text: "News Subject",
+      dataField: "StatusBy",
+      text: "Status By",
       sort: true,
       // filter: textFilter()
     },
     {
-      dataField: "Views",
-      text: "Views",
+      dataField: "StatusDate",
+      text: "Status Date",
       sort: true,
+      // filter: textFilter()
+    },
+    {
+      dataField: "CreatedDate",
+      text: "Created Date",
+      sort: true,
+      // filter: textFilter()
+    },
+    {
+      dataField: "Preview",
+      text: "Preview",
+      sort: true,
+      formatter: eye,
       // filter: textFilter()
     },
     {
@@ -78,83 +91,95 @@ const MyApproval = () => {
   ];
   const product = [
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Ram",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject:
-        "More rains expected as depression likely to cross over Tamil Nadu on Nov 11",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Image to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      NewsDate: "19-12-2021 03:57 AM",
-      NewsAuthor: "Jithin",
-      NewsSubject: "Video to Check Youtube",
-      Views: 5,
+      ApprovalType:"Differentials",
+      Status:"Approved",
+      StatusBy: "Jithin",
+      StatusDate: "19-12-2021 03:57 AM",
+      CreatedDate: "19-12-2021 03:57 AM",
     },
   ];
   function imageFormatter(cell, row) {
@@ -205,7 +230,7 @@ const MyApproval = () => {
   };
   return (
     <>
-      <div className="list_newsfeed container my-5">
+      <div className="approval_list container my-5">
         <div className="row my-3 align-items-center">
           <div className="col-md-6">
             <h5 className="main-head">APPROVAL LIST</h5>
@@ -214,7 +239,7 @@ const MyApproval = () => {
             <div className="search_bar text-right">
               <span>Search : </span>
               <input
-                placeholder="Author or Subject"
+                placeholder=""
                 onChange={handleSearchElements}
                 value={searchfilter}
                 className="serch_form"

@@ -76,13 +76,27 @@
     }
     .differential_btns {
         text-align: right;
-        .btn-primary {
-            background-color: #2163f3;
-        }
-        .btn {
+        .save_btn {
+            background-color: #2163f3!important;
+            border-color: #2163f3!important;
+            color: #fff;
+            margin: 0 10px;
+            outline: none!important;
             width: 100px;
-            margin: 0px 10px;
-            
+        }
+       .reset_btn {
+            background-color: #f2f1f1;
+            border-color: #2163f3!important;
+            color: #000;
+            margin: 0 10px;
+            outline: none!important;
+            width: 100px;
+        }
+        .reset_btn:hover {
+            background-color: #d9d6d6!important;
+            border-color: #d9d6d6!important;
+            color: #000!important;
+            outline: none!important;
         }
     }
 }

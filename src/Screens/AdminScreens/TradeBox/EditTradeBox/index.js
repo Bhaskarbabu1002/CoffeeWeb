@@ -138,8 +138,8 @@ const EditTradeBox = () => {
           </div>
           <div translate="yes" className="mt-3  sectionrow" style={{textAlign: 'center'}}>
           <div className='differential_btns'>
-  <button type="button" className="btn btn-primary">Save</button>
-  <button type="button" className="btn btn-outline-primary">Reset</button>
+  <button type="button" className="btn save_btn">Save</button>
+  <button type="button" className="btn reset_btn">Reset</button>
         </div>
           </div>
         </form>
