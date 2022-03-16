@@ -82,3 +82,21 @@
         }
     }
 }
+@media (max-width: 767.98px) { 
+    .freight_entry_section {
+        margin-bottom: 3rem;
+        .form-control {
+            width: inherit !important;    
+        }
+        .differential_btns {
+            text-align: center;
+            .btn {
+                width: 100px;
+                margin: 0px 10px 20px 0px;
+            }
+        }
+        .chkdelete {
+            width: auto;
+        }
+    }
+}

@@ -23,6 +23,7 @@ import AddUser from './Screens/AdminScreens/Users/AddUser';
 import CoffeeWeb from './Screens/CoffeeWeb';
 import ProfileInformation from './Screens/AdminScreens/Users/AddUser/ProfileInformation';
 import MyApproval from './Screens/AdminScreens/Users/MyApproval';
+import EditUser from './Screens/AdminScreens/Users/EditUser';
 function App() {
   return (
       <>
@@ -69,7 +70,10 @@ function App() {
             <Route path="/adduser">
             <AddUser/>
             </Route> 
-            <Route exact path="/approvallist">
+            <Route path="/edituser">
+            <EditUser/>
+            </Route> 
+            <Route exact path="/approvalist">
             <MyApproval/>
             </Route> 
             {/* <Route exact path="/profileinformation">

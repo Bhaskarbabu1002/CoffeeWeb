@@ -206,7 +206,7 @@ const ListUsers = () => {
        
       ];
         function imageFormatter(cell, row){
-            return <div onClick={redirect}><img src= {editIcon} /></div>;
+            return <div onClick={redirect} style={{cursor:'pointer'}}><img src= {editIcon} /></div>;
         //   return <div onClick={redirect}><img src= {editIcon} /></div>;
           } 
             function trashBin(cell, row){
@@ -214,7 +214,7 @@ const ListUsers = () => {
               }
         let history = useHistory();
         const redirect = () => {
-          history.push('/editnewsfeed')
+          history.push('/edituser')
         }
         const [FormData, setFormData] = useState(product)
         const [searchfilter, setsearchfilter] = useState('');

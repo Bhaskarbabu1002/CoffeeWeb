@@ -5,6 +5,7 @@ import eyeIcon from "../../../../Assets/Icons/eye_Icon.svg";
 import editIcon from "../../../../Assets/Icons/edit.svg";
 import trash from "../../../../Assets/Icons/trash.svg";
 import { useHistory } from "react-router-dom";
+import "./style.scss";
 const defaultSorted = [
   {
     dataField: "name",
@@ -207,7 +208,7 @@ const MyApproval = () => {
       <div className="list_newsfeed container my-5">
         <div className="row my-3 align-items-center">
           <div className="col-md-6">
-            <h5 className="main-head">NEWS FEED LIST</h5>
+            <h5 className="main-head">APPROVAL LIST</h5>
           </div>
           <div className="col-md-6 text-right">
             <div className="search_bar text-right">

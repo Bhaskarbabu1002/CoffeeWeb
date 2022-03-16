@@ -121,3 +121,12 @@
     margin-bottom: 10px;
   }
   
+  @media (max-width: 767.98px) { 
+    .add_newsfeed {
+      margin-top: 1rem;
+        margin-bottom: 5rem !important;
+    }
+    .addnews_card {
+      margin-top: 1rem;
+    }
+  }

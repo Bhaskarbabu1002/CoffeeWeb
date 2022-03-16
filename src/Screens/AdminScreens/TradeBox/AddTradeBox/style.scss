@@ -62,3 +62,9 @@
         // box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
     }
 }
+
+@media (max-width: 767.98px) { 
+    .add_trader {
+        margin-bottom: 4rem !important;
+    }
+  }

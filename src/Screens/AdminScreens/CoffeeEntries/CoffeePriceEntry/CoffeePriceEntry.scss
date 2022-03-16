@@ -83,8 +83,7 @@
 @media (max-width: 767.98px) { 
     .coffee_price {
         .form-control {
-            width: inherit;
-           
+            width: inherit !important;    
         }
         .coffee_price_btns {
             text-align: start;

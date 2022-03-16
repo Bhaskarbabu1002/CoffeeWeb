@@ -13,3 +13,21 @@ tbody, td, tfoot, th, thead, tr {
   vertical-align: middle;
   border-bottom: 2px solid #dee2e6;
 }
+
+
+@media (max-width: 767.98px) { 
+  .react-bootstrap-table {
+    overflow-x: scroll !important;
+  }
+  .table {
+    width: max-content !important;
+  }
+  .react-bootstrap-table-pagination {
+    text-align: left !important;
+    margin-top: 3rem;
+}
+.react-bootstrap-table-pagination {
+  text-align: left !important;
+  margin-top: 0rem !important;
+}
+}

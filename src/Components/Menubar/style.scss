@@ -96,7 +96,7 @@ select {
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
-    border: 1px solid transparent;
+    border: 1px solid #fff;
     border-radius: 0.25rem;
     position: absolute;
     top: -57px;
@@ -112,13 +112,14 @@ select {
         padding: 1px 0px !important;
         height: 74px;
     }
+
     #navbar-main {
-        padding: unset!important;
+    padding: unset!important;
     margin-bottom: 13px;
     justify-content: center;
     display: grid;
     z-index: 10;
-    position: absolute;
+    position: fixed;
     width: -webkit-fill-available;
     background-color: #f2f1f1;
     }

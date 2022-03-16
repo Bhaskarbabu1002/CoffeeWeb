@@ -16,7 +16,7 @@ const UserLinkingComponent = () => {
           <NavLink
             activeClassName="active_nav-link"
             exact
-            to={`/adduser`}
+            to={`/edituser`}
             className="nav-link user_nav-link"
           >
               <img src={UserIcon} alt="UserIcon" className="user_Icons"/>
@@ -25,7 +25,7 @@ const UserLinkingComponent = () => {
           <NavLink
             activeClassName="active_nav-link"
             exact
-            to="/adduser/approvalSettings"
+            to="/edituser/approvalSettings"
             className="nav-link user_nav-link"
           >
                 <img src={ShieldIcon} alt="ShieldIcon" className="user_Icons"/>
@@ -34,7 +34,7 @@ const UserLinkingComponent = () => {
           <NavLink
             activeClassName="active_nav-link"
             exact
-            to="/adduser/accountSettings"
+            to="/edituser/accountSettings"
             className="nav-link user_nav-link"
           >
                 <img src={SettingsIcon} alt="SettingsIcon" className="user_Icons"/>
