@@ -9,13 +9,17 @@ tbody, td, tfoot, th, thead, tr {
   border-style: solid;
   border-width: 0;
 }
+.table-bordered thead td, .table-bordered thead th {
+  border-bottom-width: 2px;
+  vertical-align: middle !important;
+}
 .table thead th {
   vertical-align: middle;
   border-bottom: 2px solid #dee2e6;
 }
-table {
-  border: 2px solid #f2f1f1 !important;
-}
+// .table {
+//   border: 2px solid #f2f1f1 !important;
+// }
 
 .react-bootstrap-table-pagination {
   text-align: left !important;

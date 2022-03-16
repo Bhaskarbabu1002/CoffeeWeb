@@ -181,7 +181,7 @@ const MyApproval = () => {
   ];
   function imageFormatter(cell, row) {
     return (
-      <div onClick={redirect} style={{cursor:"pointer"}}>
+      <div style={{cursor:"pointer"}}>
         <img src={editIcon}/>
       </div>
     );
@@ -196,10 +196,10 @@ const MyApproval = () => {
   function historyIcon(cell, row) {
     return <img src={HistoryIcon} />;
   }
-  let history = useHistory();
-  const redirect = () => {
-    history.push("/editnewsfeed");
-  };
+  // let history = useHistory();
+  // const redirect = () => {
+  //   history.push("/editnewsfeed");
+  // };
   const [FormData, setFormData] = useState(product);
   const [searchfilter, setsearchfilter] = useState("");
   const handleSearchElements = (event) => {

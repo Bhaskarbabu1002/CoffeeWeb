@@ -1,0 +1,110 @@
+.global_coffee_price {
+    max-width: 100% !important;
+    .main-head {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .sub-head {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        margin-top: 5px;
+    }
+    .table-scrollable {
+        height: 500px !important;
+        overflow-x: scroll !important;
+        // table tbody, td, tfoot, th, thead, tr {
+        //     border-color: #ffffff !important;
+        //     border-style: solid;
+        //     border-width: 0;
+        // }
+        .table-bordered td, .table-bordered th {
+            border: 2px solid #ffffff !important;
+        }
+        .coffee_price_thead {
+            background-color: #2163f3 !important;
+            color: white;
+            font-size: 14px !important;
+            vertical-align: middle !important;
+            text-align: center;
+            background: white;
+            position: sticky;
+            top: 0;
+        }
+        .price_data {
+            padding: 0.5rem;
+        }
+    }
+ 
+    // .table tr th, .table tr th {
+    //     text-align: center;
+    // }
+    // .table thead th {
+    //     vertical-align: middle;
+    //     border-bottom: 2px solid #dee2e6;
+    // }
+   
+ 
+    .coffee_price_btns {
+        text-align: right;
+      .save_btn {
+            background-color: #2163f3!important;
+            border-color: #2163f3!important;
+            color: #fff;
+            margin: 0 10px;
+            outline: none!important;
+            width: 100px;
+        }
+        // .save_btn:hover {
+        //     background-color: #5387f5!important;
+        //     border-color: #2163f3!important;
+        //     color: rgb(0, 0, 0);
+        //     margin: 0 10px;
+        //     outline: none!important;
+        //     width: 100px;
+        // }
+       .reset_btn {
+            background-color: #f2f1f1;
+            border-color: #2163f3!important;
+            color: #000;
+            margin: 0 10px;
+            outline: none!important;
+            width: 100px;
+        }
+        .reset_btn:hover {
+            background-color: #d9d6d6!important;
+            border-color: #d9d6d6!important;
+            color: #000!important;
+            outline: none!important;
+        }
+
+    }
+    .price_info {
+        font-size: 13px;
+    }
+    select {
+        // width: 200px;
+        border-radius: 0.25rem;
+    height: 38px;
+    border: 1px solid #d4d9df !important;
+    background-color: #f2f1f1 !important;
+    }
+    select:focus {
+        border: unset !important;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .coffee_price {
+        .form-control {
+            width: inherit !important;    
+        }
+        .coffee_price_btns {
+            text-align: start;
+            .btn {
+                width: 100px;
+                margin: 0px 10px 20px 0px;
+            }
+        }
+    }
+}
