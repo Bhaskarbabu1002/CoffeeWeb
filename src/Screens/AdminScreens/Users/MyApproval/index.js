@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import paginationFactory from "react-bootstrap-table2-paginator";
 import BootstrapTable from "react-bootstrap-table-next";
-import eyeIcon from "../../../../Assets/Icons/eye_Icon.svg";
+import {ReactComponent as CheckCircle} from "../../../../Assets/Icons/check-circle.svg";
+import {ReactComponent as XcircleIcon} from "../../../../Assets/Icons/Xcircle_Icon.svg";
 import editIcon from "../../../../Assets/Icons/edit.svg";
-import trash from "../../../../Assets/Icons/trash.svg";
+import HistoryIcon from "../../../../Assets/Icons/History_Icon.svg";
 import { useHistory } from "react-router-dom";
 import "./style.scss";
 const defaultSorted = [
@@ -41,27 +42,33 @@ const MyApproval = () => {
     {
       dataField: "StatusDate",
       text: "Status Date",
-      sort: true,
       // filter: textFilter()
     },
     {
       dataField: "CreatedDate",
       text: "Created Date",
-      sort: true,
       // filter: textFilter()
     },
     {
-      dataField: "Preview",
-      text: "Preview",
-      sort: true,
-      formatter: eye,
+      dataField: "view",
+      text: "view",
+
+      formatter: imageFormatter,
+      // editCellStyle: (cell, row, rowIndex, colIndex) => {
+      //   <img src={editIcon} alt='edit_icon'/>;
+      //   return { editIcon };
+      // }
+    },
+    {
+      dataField: "Approve",
+      text: "Approve",
+      formatter: approve,
       // filter: textFilter()
     },
     {
-      dataField: "Preview",
-      text: "Preview",
-      sort: true,
-      formatter: eye,
+      dataField: "Reject",
+      text: "Reject",
+      formatter: reject,
       // filter: textFilter()
     },
     // {
@@ -72,20 +79,10 @@ const MyApproval = () => {
     //   // filter: textFilter()
     // },
     {
-      dataField: "Edit",
-      text: "Edit",
+      dataField: "History",
+      text: "History",
 
-      formatter: imageFormatter,
-      // editCellStyle: (cell, row, rowIndex, colIndex) => {
-      //   <img src={editIcon} alt='edit_icon'/>;
-      //   return { editIcon };
-      // }
-    },
-    {
-      dataField: "delete",
-      text: "Delete",
-
-      formatter: trashBin,
+      formatter: historyIcon,
       // filter: textFilter()
     },
   ];
@@ -98,16 +95,16 @@ const MyApproval = () => {
       CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      ApprovalType:"Differentials",
+      ApprovalType:"Freight Rate",
       Status:"Approved",
-      StatusBy: "Jithin",
+      StatusBy: "Vishnu Chandran",
       StatusDate: "19-12-2021 03:57 AM",
       CreatedDate: "19-12-2021 03:57 AM",
     },
     {
-      ApprovalType:"Differentials",
+      ApprovalType:"Raw Coffee Price",
       Status:"Approved",
-      StatusBy: "Jithin",
+      StatusBy: "Sachin BP",
       StatusDate: "19-12-2021 03:57 AM",
       CreatedDate: "19-12-2021 03:57 AM",
     },
@@ -184,17 +181,20 @@ const MyApproval = () => {
   ];
   function imageFormatter(cell, row) {
     return (
-      <div onClick={redirect}>
-        <img src={editIcon} />
+      <div onClick={redirect} style={{cursor:"pointer"}}>
+        <img src={editIcon}/>
       </div>
     );
     //   return <div onClick={redirect}><img src= {editIcon} /></div>;
   }
-  function eye(cell, row) {
-    return <img src={eyeIcon} />;
+  function approve(cell, row) {
+    return <CheckCircle stroke={"green"}/>;
   }
-  function trashBin(cell, row) {
-    return <img src={trash} />;
+  function reject(cell, row) {
+    return <XcircleIcon stroke={"red"}/>;
+  }
+  function historyIcon(cell, row) {
+    return <img src={HistoryIcon} />;
   }
   let history = useHistory();
   const redirect = () => {
@@ -208,7 +208,7 @@ const MyApproval = () => {
     setsearchfilter(event.target.value);
     product.forEach((item) => {
       if (
-        item.NewsAuthor.toString()
+        item.ApprovalType.toString()
           .toLowerCase()
           .startsWith(event.target.value.toLowerCase())
       ) {
@@ -216,7 +216,7 @@ const MyApproval = () => {
         return;
       }
       if (
-        item.NewsSubject.toString()
+        item.StatusBy.toString()
           .toLowerCase()
           .startsWith(event.target.value.toLowerCase())
       ) {

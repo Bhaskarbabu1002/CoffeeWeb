@@ -73,7 +73,7 @@ function App() {
             <Route path="/edituser">
             <EditUser/>
             </Route> 
-            <Route exact path="/approvalist">
+            <Route exact path="/approvallist">
             <MyApproval/>
             </Route> 
             {/* <Route exact path="/profileinformation">
